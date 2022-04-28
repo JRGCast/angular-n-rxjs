@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HotNColdObsComponent } from './hot-ncold-obs/hot-ncold-obs.component';
 import { CreatorFunctionsComponent } from './creator-functions/creator-functions.component'
 import { PipeableOperatorsComponent } from './pipeable-operators/pipeable-operators.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -21,8 +22,13 @@ import { PipeableOperatorsComponent } from './pipeable-operators/pipeable-operat
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     HttpClientModule,
+  ],
+  exports: [
+    BrowserModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -24,7 +24,12 @@ import { BrowserModule } from '@angular/platform-browser';
   ],
   imports: [
     CommonModule,
+    BrowserModule,
     CreatorFunctionsRoutingModule
   ],
+  exports: [
+    CommonModule,
+    BrowserModule,
+  ]
 })
 export class CreatorFunctionsModule { }

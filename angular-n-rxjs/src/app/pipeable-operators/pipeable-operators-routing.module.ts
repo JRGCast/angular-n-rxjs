@@ -1,4 +1,6 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { FilterComponent } from './filter/filter.component';
 import { MapComponent } from './map/map.component';
@@ -12,7 +14,7 @@ export const routes: Routes = [
 
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forChild(routes), CommonModule, BrowserModule],
+  exports: [RouterModule, CommonModule, BrowserModule]
 })
 export class PipeableOperatorsRoutingModule { }

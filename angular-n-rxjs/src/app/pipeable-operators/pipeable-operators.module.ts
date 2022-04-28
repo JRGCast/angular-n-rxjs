@@ -5,6 +5,8 @@ import { PipeableOperatorsRoutingModule } from './pipeable-operators-routing.mod
 import { FilterComponent } from './filter/filter.component';
 import { MapComponent } from './map/map.component';
 import { TapComponent } from './tap/tap.component';
+import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({
@@ -14,8 +16,13 @@ import { TapComponent } from './tap/tap.component';
     TapComponent
   ],
   imports: [
+    BrowserModule,
     CommonModule,
     PipeableOperatorsRoutingModule
+  ],
+  exports: [
+    CommonModule,
+    BrowserModule
   ]
 })
 export class PipeableOperatorsModule { }

@@ -46,9 +46,9 @@ export class TapComponent implements OnInit {
         return [nameRes.first_name, capRes.capital, dishRes.dish]
       }),
       tap(([nameRes, capRes, dishRes]: any[]) => {
-        console.log('This is the second mapping, now we have only what we need from the response of random name', nameRes)
-        console.log('This is the second mapping, now we have only what we need from the response of random capital', capRes)
-        console.log('This is the second mapping, now we have only what we need from the response of random dish', dishRes)
+        console.log('This is the second mapping, now we have only what we need from the response of random name: ', nameRes)
+        console.log('This is the second mapping, now we have only what we need from the response of random capital: ', capRes)
+        console.log('This is the second mapping, now we have only what we need from the response of random dish: ', dishRes)
         console.log('Now we only need one mapping to transform stream data into string')
       }),
       map(([firstName, capital, dish]) => {

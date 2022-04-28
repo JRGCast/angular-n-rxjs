@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { CombineLastComponent } from './combine-last/combine-last.component';
 import { ForkJoinComponent } from './fork-join/fork-join.component';
@@ -20,7 +21,7 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+  imports: [RouterModule.forChild(routes), CommonModule, BrowserModule],
+  exports: [RouterModule, CommonModule, BrowserModule],
 })
 export class CreatorFunctionsRoutingModule { }

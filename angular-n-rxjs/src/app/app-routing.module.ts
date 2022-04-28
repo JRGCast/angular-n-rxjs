@@ -7,6 +7,8 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { routes as creatorFuncRoutes } from './creator-functions/creator-functions-routing.module';
 import { routes as pipeableOperatorsRoutes } from './pipeable-operators/pipeable-operators-routing.module'
 import { PipeableOperatorsComponent } from './pipeable-operators/pipeable-operators.component';
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 
 export const routes: Routes = [
   { path: 'introduction', component: IntroductionComponent },
@@ -23,7 +25,7 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes), BrowserModule, CommonModule],
+  exports: [RouterModule, CommonModule, BrowserModule]
 })
 export class AppRoutingModule { }
