@@ -2,8 +2,8 @@
 <button type="button" (click)="filterNews('Business')">Business news only</button>
 <button type="button" (click)="filterNews('Sports')">Sports news only</button>
 <section style="border: 5px solid black; padding: 1em;">
-  <div style="border: 1px solid blue;" *ngFor="let news of newsResult">
+  <ng-container style="border: 1px solid blue;" *ngFor="let news of newsResult">
     <p>{{news.category}}</p>
     <p>{{news.content}}</p>
-  </div>
+  </ng-container>
 </section>

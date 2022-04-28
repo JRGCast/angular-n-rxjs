@@ -42,10 +42,7 @@ export class FilterComponent implements OnInit {
   o filter aqui funciona de maneira muito semelhante ao .filter do JS em arrays, permitindo a continuidade de dados que se encaixem em determinada condição, barrando aqueles que não passem.
   É possível manter o observable original, criando um novo observable a partir do original, mas com o filter, assim pode-se utilizar tanto o original quanto o filtrado.
   */
-  ngOnInit(): void {
-
-
-  }
+  ngOnInit(): void { }
 
   filterNews(category: string) {
     this.newsResult = [];
