@@ -1,5 +1,8 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CombineLastComponent } from './combine-last/combine-last.component';
+import { ForkJoinComponent } from './fork-join/fork-join.component';
 import { FromEventComponent } from './from-event/from-event.component';
 import { FromComponent } from './from/from.component';
 import { IntervalComponent } from './interval/interval.component';
@@ -11,11 +14,13 @@ export const routes: Routes = [
   { path: 'of', component: OfComponent },
   { path: 'fromEvent', component: FromEventComponent },
   { path: 'timer', component: TimerComponent },
-  { path: 'interval', component: IntervalComponent }
+  { path: 'interval', component: IntervalComponent },
+  { path: 'forkJoin', component: ForkJoinComponent },
+  { path: 'combineLast', component: CombineLastComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class CreatorFunctionsRoutingModule { }

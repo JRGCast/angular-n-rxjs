@@ -7,7 +7,7 @@ import { interval, Observable } from 'rxjs';
   styleUrls: ['./interval.component.scss']
 })
 export class IntervalComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {

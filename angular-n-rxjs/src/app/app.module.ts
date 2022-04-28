@@ -8,7 +8,7 @@ import { AttentionComponent } from './attention/attention.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HotNColdObsComponent } from './hot-ncold-obs/hot-ncold-obs.component';
 import { CreatorFunctionsComponent } from './creator-functions/creator-functions.component'
-import { CreatorFunctionsRoutingModule } from './creator-functions/creator-functions-routing.module';
+import { PipeableOperatorsComponent } from './pipeable-operators/pipeable-operators.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,8 @@ import { CreatorFunctionsRoutingModule } from './creator-functions/creator-funct
     IntroductionComponent,
     AttentionComponent,
     HotNColdObsComponent,
-    CreatorFunctionsComponent
+    CreatorFunctionsComponent,
+    PipeableOperatorsComponent,
   ],
   imports: [
     BrowserModule,

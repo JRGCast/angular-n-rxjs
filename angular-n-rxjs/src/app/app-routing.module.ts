@@ -1,13 +1,12 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AttentionComponent } from './attention/attention.component';
 import { CreatorFunctionsComponent } from './creator-functions/creator-functions.component';
-import { FromEventComponent } from './creator-functions/from-event/from-event.component';
-import { FromComponent } from './creator-functions/from/from.component';
-import { OfComponent } from './creator-functions/of/of.component';
 import { HotNColdObsComponent } from './hot-ncold-obs/hot-ncold-obs.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { routes as creatorFuncRoutes } from './creator-functions/creator-functions-routing.module';
+import { routes as pipeableOperatorsRoutes } from './pipeable-operators/pipeable-operators-routing.module'
+import { PipeableOperatorsComponent } from './pipeable-operators/pipeable-operators.component';
 
 export const routes: Routes = [
   { path: 'introduction', component: IntroductionComponent },
@@ -16,6 +15,10 @@ export const routes: Routes = [
   {
     path: 'creator-functions', component: CreatorFunctionsComponent,
     children: creatorFuncRoutes
+  },
+  {
+    path: 'pipeable-operators', component: PipeableOperatorsComponent,
+    children: pipeableOperatorsRoutes
   }
 ];
 

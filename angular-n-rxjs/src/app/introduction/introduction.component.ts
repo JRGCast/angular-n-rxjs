@@ -8,7 +8,6 @@ import { Observable, Observer, Subscription } from 'rxjs';
 })
 export class IntroductionComponent implements OnInit {
 
-
   constructor() { }
 
   ngOnInit(): void {
