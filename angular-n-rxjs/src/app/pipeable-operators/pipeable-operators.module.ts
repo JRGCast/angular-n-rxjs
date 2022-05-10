@@ -7,13 +7,17 @@ import { MapComponent } from './map/map.component';
 import { TapComponent } from './tap/tap.component';
 import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
 import { BrowserModule } from '@angular/platform-browser';
+import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
+import { CatchErrorComponent } from './catch-error/catch-error.component';
 
 
 @NgModule({
   declarations: [
     FilterComponent,
     MapComponent,
-    TapComponent
+    TapComponent,
+    DebounceTimeComponent,
+    CatchErrorComponent
   ],
   imports: [
     BrowserModule,

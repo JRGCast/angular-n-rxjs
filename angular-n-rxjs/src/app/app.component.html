@@ -1,5 +1,5 @@
-<nav style="display: flex; flex-direction: row; justify-content: space-between; width: 70%; margin-left: 20%; margin-bottom: 4em;">
-  <a [routerLink]="[route.path]" *ngFor="let route of routerLinks"> Go to {{route.path}}
+<nav style="display: flex; flex-direction: row; justify-content: space-between; width: 70%; margin-left: 10%; margin-bottom: 4em;">
+  <a style="margin: 1em;" [routerLink]="[route.path]" *ngFor="let route of routerLinks"> Go to {{route.path}}
   </a>
 </nav>
 <router-outlet></router-outlet>

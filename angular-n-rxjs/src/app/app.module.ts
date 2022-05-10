@@ -12,6 +12,10 @@ import { PipeableOperatorsComponent } from './pipeable-operators/pipeable-operat
 import { CommonModule } from '@angular/common';
 import { CreatorFunctionsModule } from './creator-functions/creator-functions.module';
 import { PipeableOperatorsModule } from './pipeable-operators/pipeable-operators.module';
+import { FlatenningOperatorsComponent } from './flatenning-operators/flatenning-operators.component';
+import { ConcatMapComponent } from './flatenning-operators/concat-map/concat-map.component';
+import { SubjectsComponent } from './subjects/subjects.component';
+import { BehaviorSubjectComponent } from './subjects/behavior-subject/behavior-subject.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +25,16 @@ import { PipeableOperatorsModule } from './pipeable-operators/pipeable-operators
     HotNColdObsComponent,
     CreatorFunctionsComponent,
     PipeableOperatorsComponent,
+    FlatenningOperatorsComponent,
+    ConcatMapComponent,
+    SubjectsComponent,
+    BehaviorSubjectComponent,
   ],
   imports: [
     BrowserModule,
     CommonModule,
     AppRoutingModule,
     HttpClientModule,
-    // CreatorFunctionsModule,
-    // PipeableOperatorsModule
   ],
   exports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 <p style="text-align: center;">pipeable-operators works!</p>
 <nav style="display: flex; flex-direction: row; justify-content: space-between; width: 70%; margin-left: 20%;">
-  <a [routerLink]="[route.path]" *ngFor="let route of childLinks"> Go to {{route.path}}
+  <a style="margin: 1em;" [routerLink]="[route.path]" *ngFor="let route of childLinks"> Go to {{route.path}}
   </a>
 </nav>
 <router-outlet></router-outlet>
