@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { routes as subjectRoutes } from './subjects-routing.module'
+
+import { routes as subjectRoutes } from './subjects-routing.module';
 
 @Component({
   selector: 'app-subjects',
